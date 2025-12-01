@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mente Cromática | Jogo de Cores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <h1>🎨 Mente Cromática</h1>
+            <p class="instructions">Tente adivinhar a cor secreta em inglês! (ex: red, gold, cyan...)</p>
+        </header>
+
+        <main>
+            <div class="status-bar">
+                <span>Tentativas restantes: <strong id="attempts-count">3</strong></span>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="color-input" placeholder="Digite uma cor..." autocomplete="off">
+                <button id="btn-guess">Adivinhar</button>
+            </div>
+
+            <div id="feedback-msg" class="message-area"></div>
+
+            <button id="btn-restart" class="hidden">Jogar Novamente ↻</button>
+        </main>
+        
+        <footer>
+            <small>Projeto Prático C3 - FAESA</small>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
